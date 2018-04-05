@@ -58,3 +58,7 @@ gem 'devise', '>= 4.4.3'
 gem 'simple_form'
 
 gem 'figaro'
+
+gem 'bootstrap'
+
+gem 'jquery-rails'
