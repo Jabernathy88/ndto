@@ -1,5 +1,7 @@
 # Outline for Revamped NDTO (MVP to RC Zero)
 
+-- This is Friday sprint --
+
 See also pretty version of this [Readme on Medium.com](https://medium.com/@ghostmap/outline-for-revamped-ndto-3a2a0d35feab).
 
 I am rebuilding the rails app I attempted last month, but this time with better planning and technique. Elevator pitch:
