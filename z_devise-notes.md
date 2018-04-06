@@ -1,4 +1,5 @@
 
+
 rails new project-name -d prostgresql
 
 gem install 'simple_form'
@@ -67,3 +68,6 @@ class RegistrationsController < Devise::RegistrationsController
     params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :current_password)
   end
 end
+
+  --- 
+seed pass = moogoo 
