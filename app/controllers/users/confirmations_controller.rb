@@ -1,20 +1,20 @@
 # frozen_string_literal: true
 
-class User::ConfirmationsController < Devise::ConfirmationsController
-  GET /resource/confirmation/new
-  def new
-    super
-  end
+# class Users::ConfirmationsController < Devise::ConfirmationsController
+  # GET /resource/confirmation/new
+  # def new
+  #   super
+  # end
 
-  POST /resource/confirmation
-  def create
-    super
-  end
+  # POST /resource/confirmation
+  # def create
+  #   super
+  # end
 
-  GET /resource/confirmation?confirmation_token=abcdef
-  def show
-    super
-  end
+  # GET /resource/confirmation?confirmation_token=abcdef
+  # def show
+  #   super
+  # end
 
   # protected
 
@@ -27,4 +27,4 @@ class User::ConfirmationsController < Devise::ConfirmationsController
   # def after_confirmation_path_for(resource_name, resource)
   #   super(resource_name, resource)
   # end
-end
+# end

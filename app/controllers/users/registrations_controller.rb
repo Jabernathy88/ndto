@@ -1,33 +1,35 @@
 # frozen_string_literal: true
 
-class User::RegistrationsController < Devise::RegistrationsController
+class Users::RegistrationsController < Devise::RegistrationsController
+
+  # PRIVATE SECTION BELOW, PER JACOPRETORIUS.NET
+
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
+  
+  # GET /resource/sign_up
+  # def new
+  # end
 
-  GET /resource/sign_up
-  def new
-    super
-  end
+  # POST /resource
+  # def create
+  #   super
+  # end
 
-  POST /resource
-  def create
-    super
-  end
+  # GET /resource/edit
+  # def edit
+  #   super
+  # end
 
-  GET /resource/edit
-  def edit
-    super
-  end
+  # PUT /resource
+  # def update
+  #   super
+  # end
 
-  PUT /resource
-  def update
-    super
-  end
-
-  DELETE /resource
-  def destroy
-    super
-  end
+  # DELETE /resource
+  # def destroy
+  #   super
+  # end
 
   # GET /resource/cancel
   # Forces the session data which is usually expired after sign
@@ -59,4 +61,15 @@ class User::RegistrationsController < Devise::RegistrationsController
   # def after_inactive_sign_up_path_for(resource)
   #   super(resource)
   # end
+
+  # private
+
+  # def sign_up_params
+  #   params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
+  # end
+
+  # def account_update_params
+  #   params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :current_password)
+  # end
+
 end
