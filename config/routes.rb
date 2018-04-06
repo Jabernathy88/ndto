@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :users
   root "tournaments#index"
   resources :tournaments
-  devise_for :users, :controllers => { registrations: 'registrations' }
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  devise_for :users, :controllers => { registrations: 'users/registrations' }
+  
+  # devise_scope :user do
+  #   post 'users/new-registration' => 'users/registrations#create'
+  #   post 'users/new-session' => 'users/sessions#create'
+  # end
+
 end
