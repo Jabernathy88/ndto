@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+#mar_mar {
+  padding: 0 5px 5px;
+}
