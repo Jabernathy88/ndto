@@ -1,6 +1,14 @@
 # Outline for Revamped NDTO (MVP to RC Zero)
 
--- This is Friday sprint --
+On days that I have limited access to my Macbook, I'll be practicing and planning on a Windows machine at these two sand-box websites:
+
+* My [projects at CodePen.io](https://codepen.io/Jabernathy88/projects/overview/) (limit 1 for free account)
+
+* My [small Code Pens](https://codepen.io/Jabernathy88/pens/public/) 
+
+* My [snippets at Repl.it](https://repl.it/@Jabernathy88)
+
+### This is Friday sprint below:
 
 See also pretty version of this [Readme on Medium.com](https://medium.com/@ghostmap/outline-for-revamped-ndto-3a2a0d35feab).
 
