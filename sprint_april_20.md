@@ -86,14 +86,66 @@ START PART 2
 
 rails g migration AddUserRefToTournaments user:references
 
+rails db:migrate
+
 ```
 before_action :authenticate_user!, except: [:show]
 ```
 
-rails g model Player name icon_img tournament:references
+```
+has_many :tournaments,  foreign_key: :user_id
+```
 
-rails g model Matchups round_number:integer winner_id:integer tournament:references
+```
+belongs_to :user
+```
+
+```
+def new
+  @tournament = current_user.tournaments.new
+end
+...
+def create
+  @tournament = current_user.tournaments.new(tournament_params)
+...
+def tournament_params
+  params.require(:tournament).permit(:name, :user_id)
+end
+```
+
+ -----------  -----------
+
+rails g scaffold Player name icon_img 
+
+rails g migration AddTournamentRefToPlayer tournament:references
+
+rails g scaffold Matchup round_number:integer 
+
+rails g migration AddTournamentRefToMatchup tournament:references
 
 rails g model MatchupPlayers win_count:integer loss_count:integer draw_count:integer matchup:references player:references
 
-conform all relations with belongs_to, has_many
+ -----------  -----------
+
+```
+# tournament model
+  belongs_to :user
+  has_many :players,    foreign_key: :tournament_id
+  has_many :matchups,   foreign_key: :tournament_id
+
+# player model
+  belongs_to :tournament
+  has_many :matchups, through: :matchup_players
+
+# matchup model 
+  belongs_to :tournament 
+  has_many :players, through: :matchup_players
+
+# matchup_player model 
+  belongs_to :matchup
+  belongs_to :player
+```
+
+rails db:migrate
+
+END PART 2 

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  win_count: 1
+  loss_count: 1
+  draw_count: 1
+  matchup: one
+  player: one
+
+two:
+  win_count: 1
+  loss_count: 1
+  draw_count: 1
+  matchup: two
+  player: two
