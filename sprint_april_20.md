@@ -1,4 +1,6 @@
-rails new project-name -d prostgresql
+START PART 1 
+
+  -----------  -----------
 
 gem 'simple_form'
 
@@ -8,15 +10,11 @@ bundle
 
 bundle update
 
-rails g scaffold tournament attributes (no references)
+rails g scaffold Tournament attributes (no references)
 
-rails generate simple_form:install --foundation
+rails g simple_form:install --foundation
 
 rails g devise:install
-
-rails g devise User 
-
-rails g migration AddFieldsToUser username icon_img
 
 config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
@@ -25,34 +23,72 @@ root "tournaments#index"
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 
-git add, commit, push 
+ -----------  -----------  -----------
+
+rails g devise User 
+
+rails g migration AddFieldsToUsers username icon_img
 
 rails db:create db:migrate
 
-add persistent sign out to layout.erb
+```
+<div id="user_nav">
+  <% if user_signed_in? %>
+    Signed in as <%= current_user.email %>. Not you?
+    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+  <% else %>
+    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+  <% end %>
+</div>
+```
 
-create custom controller, per:
-https://jacopretorius.net/2014/03/adding-custom-fields-to-your-devise-user-model-in-rails-4.html
+```
+<%= stylesheet_link_tag    'https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css', 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+```
 
-update config/routes to:
-devise_for :users, :controllers => { registrations: 'users/registrations' }
+```
+<%= javascript_include_tag 'https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js', 'application', 'data-turbolinks-track': 'reload' %>
+```
 
-git add, commit, push 
+```
+class RegistrationsController < Devise::RegistrationsController
+
+  private
+
+  def sign_up_params
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
+  end
+
+  def account_update_params
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :current_password)
+  end
+end
+```
+
+devise_for :users, :controllers => { registrations: 'registrations' }
+
+git add commit push
 
 rails g devise:views
 
-add new form fields for custom user attributes
-in: registration/new registration/edit
 
-SPRINT 1.2 (end 2:45 Friday)
+```
+<%= f.input :username, required: true, autofocus: true %>
+<%= f.input :email, required: true %>
+...
+<%= f.input :icon_img, collection: ['white', 'blue', 'black', 'green', 'red'], required: true %>
 
-# add custom logout to routes:
-# ```devise_scope :user do
-#    post 'users/new-registration' => 'users/registrations#create'
-#    post 'users/new-session' => 'users/sessions#create'
-# end``` # later
+```
 
-rails g migration AddUserToTournaments user:references
+  -----------  -----------
+
+START PART 2
+
+rails g migration AddUserRefToTournaments user:references
+
+```
+before_action :authenticate_user!, except: [:show]
+```
 
 rails g model Player name icon_img tournament:references
 
@@ -61,27 +97,3 @@ rails g model Matchups round_number:integer winner_id:integer tournament:referen
 rails g model MatchupPlayers win_count:integer loss_count:integer draw_count:integer matchup:references player:references
 
 conform all relations with belongs_to, has_many
-
-git add, commit, push
-
-** END OF SPRINT for now
-
-SPRINT 1.3 (end 3:15 Friday)
-
-
-Story: (don’t let Users access a Tournament unless they are the owner)
-
-Story: let Tournaments `accept_nested_attributes_for :tournaments`, update Tournament form to include spots for Player names
-
-try crud by, example:
-rails g scaffold_controller User name email
-
-SPRINT 1.4 (end 4:00 Friday)
-
-import materialize CDN for css and js
-
-add quick images
-
-commit and push and send out to ben!
-
-* new planning
