@@ -23,7 +23,7 @@ root "tournaments#index"
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 
- -----------  -----------  -----------
+  -----------  -----------  -----------
 
 rails g devise User 
 

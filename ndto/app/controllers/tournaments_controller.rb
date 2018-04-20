@@ -1,4 +1,5 @@
 class TournamentsController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_tournament, only: [:show, :edit, :update, :destroy]
 
   # GET /tournaments
@@ -14,7 +15,7 @@ class TournamentsController < ApplicationController
 
   # GET /tournaments/new
   def new
-    @tournament = Tournament.new
+    @tournament = current_user.tournaments.new
   end
 
   # GET /tournaments/1/edit
@@ -24,7 +25,7 @@ class TournamentsController < ApplicationController
   # POST /tournaments
   # POST /tournaments.json
   def create
-    @tournament = Tournament.new(tournament_params)
+    @tournament = current_user.tournaments.new(tournament_params)
 
     respond_to do |format|
       if @tournament.save
@@ -69,6 +70,6 @@ class TournamentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tournament_params
-      params.require(:tournament).permit(:name)
+      params.require(:tournament).permit(:name, :user_id)
     end
 end
