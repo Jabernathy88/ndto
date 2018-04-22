@@ -1,5 +1,9 @@
 # Outline for Revamped NDTO (MVP to RC Zero)
 
+### Sunday sprint
+
+Will add link to Medium.com. 
+
 (On days that I have limited access to my Macbook, I'll be practicing and planning on a Windows machine at these two sand-box websites:
 
 * My [projects at CodePen.io](https://codepen.io/Jabernathy88/projects/overview/) (limit 1 for free account)
