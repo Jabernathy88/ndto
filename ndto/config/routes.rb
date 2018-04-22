@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
+  devise_for :users, :controllers => { registrations: 'registrations' }
 
   resources :matchups
   resources :players
-  devise_for :users, :controllers => { registrations: 'registrations' }
-
   resources :tournaments
-  
-  root 'tournaments#index'
 
+  root 'pages#home'
+
+  get 'pages/home'
+
+  get 'pages/dashboard'
+
+  get 'pages/tournament'
 end

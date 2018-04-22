@@ -2,7 +2,7 @@
 
 ### Sunday sprint
 
-Will add link to Medium.com. 
+Will add new link to Medium.com. 
 
 (On days that I have limited access to my Macbook, I'll be practicing and planning on a Windows machine at these two sand-box websites:
 
