@@ -14,6 +14,24 @@
  *= require_self
  */
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app-root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: white;
+}
+
 #mar_mar {
   padding: 0 5px 20px;
 }

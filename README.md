@@ -12,6 +12,34 @@ Will add new link to Medium.com.
 
 * My [snippets at Repl.it](https://repl.it/@Jabernathy88))
 
+## Viewport notes
+
+Pixels for breakpoints:
+
+MOBILE = 420 and less
+
+TABLET = 421 to 800
+
+DESKTOP = 801 and up
+
+Most common desktop screen = 1366 x 768px
+
+Samsung mobile = 360 x 640px
+
+iPhone8 Plus = 414 x 736px
+
+iPad 768 x 1024
+
+Desktop vertical grid = 768/12 = 64px
+
+Base y axis = 70px
+
+70 x 12 = 840
+
+70 x 4 = 280 
+
+840 - 280 = 560 = about two-thirds viewheight
+
 ### This is Friday sprint below:
 
 See also pretty version of this [Readme on Medium.com](https://medium.com/@ghostmap/outline-for-revamped-ndto-3a2a0d35feab).
