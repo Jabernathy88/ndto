@@ -23,6 +23,9 @@ class TournamentsController < ApplicationController
 
   # GET /tournaments/1/edit
   def edit
+    @user_id = @tournament.user_id
+    @players = @tournament.players
+    @matchups = @tournament.matchups
   end
 
   # POST /tournaments
