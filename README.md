@@ -14,6 +14,8 @@ Link to my [Trello board](https://trello.com/b/X4ieoyP0/indie-tournaments-v2-rc-
 
 * My [snippets at Repl.it](https://repl.it/@Jabernathy88))
 
+Adding to regular portfolio next.
+
 ## Wireframe notes
 
 * **Mobile 12 Grid: 30x 54y | 360 x 648**
