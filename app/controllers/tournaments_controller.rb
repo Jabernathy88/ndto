@@ -11,6 +11,9 @@ class TournamentsController < ApplicationController
   # GET /tournaments/1
   # GET /tournaments/1.json
   def show
+    @user_id = @tournament.user_id
+    @players = @tournament.players
+    @matchups = @tournament.matchups
   end
 
   # GET /tournaments/new

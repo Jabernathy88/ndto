@@ -1,5 +1,16 @@
-<h1>New Tournament</h1>
+<h2>New Tournament</h2>
 
 <%= render 'form', tournament: @tournament %>
 
+<br/>
+<h3>Players</h3>
+
+<form action="">
+  <label>
+    Select # of players
+    <input type="number" min="4" max="32">
+  </label>
+</form>
+
+<br />
 <%= link_to 'Back', tournaments_path %>
