@@ -14,15 +14,23 @@ Link to my [Trello board](https://trello.com/b/X4ieoyP0/indie-tournaments-v2-rc-
 
 * My [snippets at Repl.it](https://repl.it/@Jabernathy88))
 
+## Wireframe notes
+
+* **Mobile 12 Grid: 30x 54y | 360 x 648**
+
+* **Tablet 12 Grid: 64x 86y | 768 x 1032**
+
+* **Desktop 12 Grid: 114x 64y | 1368 x 768**
+
 ## Viewport notes
 
 Pixels for breakpoints:
 
-MOBILE = 420 and less
+MOBILE = 414 and less
 
-TABLET = 421 to 800
+TABLET = 415 to 768
 
-DESKTOP = 801 and up
+DESKTOP = 769 to 1366
 
 Most common desktop screen = 1366 x 768px
 
@@ -31,16 +39,6 @@ Samsung mobile = 360 x 640px
 iPhone8 Plus = 414 x 736px
 
 iPad 768 x 1024
-
-Desktop vertical grid = 768/12 = 64px
-
-Base y axis = 70px
-
-70 x 12 = 840
-
-70 x 4 = 280 
-
-840 - 280 = 560 = about two-thirds viewheight
 
 ### This is Friday sprint below:
 
