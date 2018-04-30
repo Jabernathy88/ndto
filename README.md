@@ -1,8 +1,10 @@
 # Outline for Revamped NDTO (MVP to RC Zero)
 
-### Sunday sprint
+## User Stories / Planning
 
-Will add new link to Medium.com. 
+Link to my [Trello board](https://trello.com/b/X4ieoyP0/indie-tournaments-v2-rc-zero). 
+
+### Misc. notes
 
 (On days that I have limited access to my Macbook, I'll be practicing and planning on a Windows machine at these two sand-box websites:
 
@@ -131,7 +133,7 @@ Resources for planning match-making math:
 
 Stories written from user’s perspective.
 
-See link to new Trello Board
+See link to new Trello Board.
 
 More TBD
 
