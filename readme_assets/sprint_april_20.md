@@ -149,3 +149,15 @@ rails g model MatchupPlayers win_count:integer loss_count:integer draw_count:int
 rails db:migrate
 
 END PART 2 
+
+  ---------------
+
+create 'super_form' 
+
+app/forms
+
+render 'form' in view
+
+dealership form controller 
+
+

@@ -60,7 +60,7 @@ Notes inspired by a meeting on 04/03/18.
 
 ### Diagram
 
-![Diagram](/readme_images/erd_04-03-18.png)
+![Diagram](/readme_assets/erd_04-03-18.png)
 
 Users have Tournaments have many Players and Matchups. Players have Matchups through a join.
 

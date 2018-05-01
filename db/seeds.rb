@@ -27,7 +27,7 @@ team_blue = Player.create(
   name: "Team Blue",
   icon_img: 'blue'
 )
-team_orange = Player.create(
+team_green = Player.create(
   tournament: tourn1,
   name: "Team Green",
   icon_img: 'green'
@@ -38,3 +38,27 @@ team_red = Player.create(
   icon_img: 'red'
 )
 
+matchup1a = Matchup.create(
+  tournament: tourn1,
+  round_number: 1,
+)
+matchup1b = Matchup.create(
+  tournament: tourn1,
+  round_number: 1,
+)
+matchup2a = Matchup.create(
+  tournament: tourn1,
+  round_number: 2,
+)
+
+join_black_blue = MatchupPlayer.create(
+  
+)
+
+join_green_red = MatchupPlayer.create(
+  
+)
+
+join_black_red = MatchupPlayer.create(
+  
+)
