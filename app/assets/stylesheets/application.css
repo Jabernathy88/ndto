@@ -36,3 +36,8 @@ body {
 #mar_mar {
   padding: 0 5px 20px;
 }
+
+space-between {
+  display: flex;
+  justify-content: space-between;
+}

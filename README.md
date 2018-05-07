@@ -1,48 +1,6 @@
 # Outline for Revamped NDTO (MVP to RC Zero)
 
-## User Stories / Planning
-
-Link to my [Trello board](https://trello.com/b/X4ieoyP0/indie-tournaments-v2-rc-zero). 
-
-### Misc. notes
-
-(On days that I have limited access to my Macbook, I'll be practicing and planning on a Windows machine at these two sand-box websites:
-
-* My [projects at CodePen.io](https://codepen.io/Jabernathy88/projects/overview/) (limit 1 for free account)
-
-* My [small Code Pens](https://codepen.io/Jabernathy88/pens/public/) 
-
-* My [snippets at Repl.it](https://repl.it/@Jabernathy88))
-
-Adding to regular portfolio next.
-
-## Wireframe notes
-
-* **Mobile 12 Grid: 30x 54y | 360 x 648**
-
-* **Tablet 12 Grid: 64x 86y | 768 x 1032**
-
-* **Desktop 12 Grid: 114x 64y | 1368 x 768**
-
-## Viewport notes
-
-Pixels for breakpoints:
-
-MOBILE = 414 and less
-
-TABLET = 415 to 768
-
-DESKTOP = 769 to 1366
-
-Most common desktop screen = 1366 x 768px
-
-Samsung mobile = 360 x 640px
-
-iPhone8 Plus = 414 x 736px
-
-iPad 768 x 1024
-
-### This is Friday sprint below:
+Deployed here: [NDTO at Heroku](https://ndto.herokuapp.com)
 
 See also pretty version of this [Readme on Medium.com](https://medium.com/@ghostmap/outline-for-revamped-ndto-3a2a0d35feab).
 
