@@ -53,14 +53,12 @@
   <tbody>
     <% @matchups.each do |matchup| %>
       <tr>
-        <td><%= matchup.round_id %></td>
+        <td><%= matchup.round_number %></td>
         <td><%= matchup.id %></td>
         <td><em>PLAYER A</em> </td>
         <td><strong>vs</strong></td>
         <td><em>PLAYER B</em></td>        
-        <td><%= link_to 'Show', player %></td>
-        <td><%= link_to 'Edit', edit_player_path(player) %></td>
-        <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
       </tr>
     <% end %>
   </tbody>
@@ -83,14 +81,11 @@
   <tbody>
     <% @matchups.each do |matchup| %>
       <tr>
-        <td><%= matchup.round_id %></td>
+        <td><%= matchup.round_number %></td>
         <td><%= matchup.id %></td>
         <td><em>PLAYER A</em> </td>
         <td><strong>vs</strong></td>
         <td><em>PLAYER B</em></td>        
-        <td><%= link_to 'Show', player %></td>
-        <td><%= link_to 'Edit', edit_player_path(player) %></td>
-        <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -113,14 +108,11 @@
   <tbody>
     <% @matchups.each do |matchup| %>
       <tr>
-        <td><%= matchup.round_id %></td>
+        <td><%= matchup.round_number %></td>
         <td><%= matchup.id %></td>
         <td><em>PLAYER A</em> </td>
         <td><strong>vs</strong></td>
         <td><em>PLAYER B</em></td>        
-        <td><%= link_to 'Show', player %></td>
-        <td><%= link_to 'Edit', edit_player_path(player) %></td>
-        <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -153,4 +145,3 @@
 <br />
 <%= link_to 'Edit Tournament', edit_tournament_path(@tournament) %> |
 <%= link_to 'Back', tournaments_path %>
-
