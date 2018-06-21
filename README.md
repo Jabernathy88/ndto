@@ -1,4 +1,4 @@
-# Outline for Revamped NDTO (MVP to RC Zero)
+# NDTO: Indie Tournament Organizer
 
 Deployed here: [NDTO at Heroku](https://ndto.herokuapp.com)
 
@@ -10,9 +10,16 @@ The app’s name is pronounced “indie T.O.” 
 
 Magic players often say T.O. as shorthand for “tournament organizer” to refer to a store owner — the person responsible for setting entry fees, paying out prizes, recruiting judges, and ensuring good atmosphere and customer service during the event.
 
+_[Documentation for previous version](https://github.com/Jabernathy88/capstone-jeremy-dev)._
+
 _See also pretty version of this [Readme on Medium.com](https://medium.com/@ghostmap/outline-for-revamped-ndto-3a2a0d35feab)._
 
-_Documentation for [previous version](https://github.com/Jabernathy88/capstone-jeremy-dev)._
+
+# JUNE 21st UPDATE
+
+![Final Four data](./readme_assets/2018_champion_snap.png)
+
+Above: Villanova was the 2018 Final Four college basketball champion. Snapshot comes from Rails Console, showing many-to-many relationship between Players and the join table, MatchupPlayers. [Click here for a closer look.](./readme_assets/2018_champion_snap.png)
 
 ## ERD & data attributes
 
@@ -20,7 +27,7 @@ Notes inspired by a meeting on 04/03/18.
 
 ### Diagram
 
-![Diagram](/readme_assets/erd_04-03-18.png)
+![Diagram](./readme_assets/erd_04-03-18.png)
 
 Users have Tournaments have many Players and Matchups. Players have Matchups through a join.
 

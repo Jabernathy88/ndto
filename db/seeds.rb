@@ -162,18 +162,18 @@ kansas_vs_villanova = MatchupPlayer.create(
   draw_count: 0
 )
 
-# Villanova becomes 2018 champion 
+# Villanova defeats Michigan and becomes 2018 champion 
 michigan_vs_villanova = MatchupPlayer.create(
-  player: team_red,
-  matchup: matchup2a,
-  win_count: 1,
-  loss_count: 0,
-  draw_count: 0
-)
-villanova_vs_michigan = MatchupPlayer.create(
-  player: team_black,
+  player: michigan,
   matchup: matchup2a,
   win_count: 0,
   loss_count: 1,
+  draw_count: 0
+)
+villanova_vs_michigan = MatchupPlayer.create(
+  player: villanova,
+  matchup: matchup2a,
+  win_count: 1,
+  loss_count: 0,
   draw_count: 0
 )
