@@ -10,8 +10,9 @@ ActiveRecord::Base.connection.tables.each do |t|
 end
 
 tourn1 = Tournament.find(1)
-# tourn2 = Tournament.find(2)
+tourn2 = Tournament.find(2)
 
+# Tournament1, generic 4 player elim
 team_black = Player.create(
   tournament: tourn1,
   name: "Team Black",
@@ -87,6 +88,89 @@ join_red_black = MatchupPlayer.create(
   draw_count: 0
 )
 join_black_red = MatchupPlayer.create(
+  player: team_black,
+  matchup: matchup2a,
+  win_count: 0,
+  loss_count: 1,
+  draw_count: 0
+)
+
+# Tournament2, data from 2018 Final Four
+loyola = Player.create(
+  tournament: tourn2,
+  name: "Loyola-Chicago",
+  icon_img: 'white'
+)
+michigan = Player.create(
+  tournament: tourn2,
+  name: "Michigan",
+  icon_img: 'blue'
+)
+villanova = Player.create(
+  tournament: tourn2,
+  name: "Villanova",
+  icon_img: 'black'
+)
+kansas = Player.create(
+  tournament: tourn2,
+  name: "Kansas",
+  icon_img: 'red'
+)
+
+matchup1a = Matchup.create(
+  tournament: tourn2,
+  round_number: 1,
+)
+matchup1b = Matchup.create(
+  tournament: tourn2,
+  round_number: 1,
+)
+matchup2a = Matchup.create(
+  tournament: tourn2,
+  round_number: 2,
+)
+
+# Loyola loses to Michigan
+loyola_vs_michigan = MatchupPlayer.create(
+  player: loyola,
+  matchup: matchup1a,
+  win_count: 0,
+  loss_count: 1,
+  draw_count: 0
+)
+michigan_vs_loyola = MatchupPlayer.create(
+  player: michigan,
+  matchup: matchup1a,
+  win_count: 1,
+  loss_count: 0,
+  draw_count: 0
+)
+
+# Villanova defeats Kansas 
+villanova_vs_kansas = MatchupPlayer.create(
+  player: villanova,
+  matchup: matchup1b,
+  win_count: 1,
+  loss_count: 0,
+  draw_count: 0
+)
+kansas_vs_villanova = MatchupPlayer.create(
+  player: kansas,
+  matchup: matchup1b,
+  win_count: 0,
+  loss_count: 1,
+  draw_count: 0
+)
+
+# Villanova becomes 2018 champion 
+michigan_vs_villanova = MatchupPlayer.create(
+  player: team_red,
+  matchup: matchup2a,
+  win_count: 1,
+  loss_count: 0,
+  draw_count: 0
+)
+villanova_vs_michigan = MatchupPlayer.create(
   player: team_black,
   matchup: matchup2a,
   win_count: 0,
