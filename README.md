@@ -19,7 +19,9 @@ _See also pretty version of this [Readme on Medium.com](https://medium.com/@ghos
 
 ![Final Four data](./readme_assets/2018_champion_snap.png)
 
-Above: Villanova was the 2018 Final Four college basketball champion. Snapshot comes from Rails Console, showing many-to-many relationship between Players and the join table, MatchupPlayers. [Click here for a closer look.](./readme_assets/2018_champion_snap.png)
+**Above:** Villanova was the 2018 Final Four college basketball champion. 
+
+Snapshot comes from Rails Console, showing many-to-many relationship between Players and the join table, MatchupPlayers. [Click here for a closer look.](./readme_assets/2018_champion_snap.png)
 
 ## ERD & data attributes
 
