@@ -1,10 +1,5 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# Creating tournament requires user authentication. 
+# This seed file should be used after creating 1 user and 2 tournaments manually. 
 
 MatchupPlayer.destroy_all
 Matchup.destroy_all
@@ -15,7 +10,7 @@ ActiveRecord::Base.connection.tables.each do |t|
 end
 
 tourn1 = Tournament.find(1)
-tourn2 = Tournament.find(2) 
+tourn2 = Tournament.find(2)
 
 team_black = Player.create(
   tournament: tourn1,
@@ -51,14 +46,50 @@ matchup2a = Matchup.create(
   round_number: 2,
 )
 
+# Team Black wins Matchup1a
 join_black_blue = MatchupPlayer.create(
-  
+  player: team_black,
+  matchup: matchup1a,
+  win_count: 1,
+  loss_count: 0,
+  draw_count: 0
+)
+join_blue_black = MatchupPlayer.create(
+  player: team_blue,
+  matchup: matchup1a,
+  win_count: 0,
+  loss_count: 1,
+  draw_count: 0
 )
 
+# Team Red wins Matchup1b 
+join_red_green = MatchupPlayer.create(
+  player: team_red,
+  matchup: matchup1b,
+  win_count: 1,
+  loss_count: 0,
+  draw_count: 0
+)
 join_green_red = MatchupPlayer.create(
-  
+  player: team_green,
+  matchup: matchup1b,
+  win_count: 0,
+  loss_count: 1,
+  draw_count: 0
 )
 
+# Team Red wins Matchup2a (finals)
+join_red_black = MatchupPlayer.create(
+  player: team_red,
+  matchup: matchup2a,
+  win_count: 1,
+  loss_count: 0,
+  draw_count: 0
+)
 join_black_red = MatchupPlayer.create(
-  
+  player: team_black,
+  matchup: matchup2a,
+  win_count: 0,
+  loss_count: 1,
+  draw_count: 0
 )

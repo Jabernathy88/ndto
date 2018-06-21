@@ -2,8 +2,6 @@
 
 Deployed here: [NDTO at Heroku](https://ndto.herokuapp.com)
 
-See also pretty version of this [Readme on Medium.com](https://medium.com/@ghostmap/outline-for-revamped-ndto-3a2a0d35feab).
-
 I am rebuilding the rails app I attempted last month, but this time with better planning and technique. Elevator pitch:
 
 * _NDTO is a Magic the Gathering tournament tracker app for local unsanctioned game events._
@@ -11,6 +9,10 @@ I am rebuilding the rails app I attempted last month, but this time with better 
 The app’s name is pronounced “indie T.O.” 
 
 Magic players often say T.O. as shorthand for “tournament organizer” to refer to a store owner — the person responsible for setting entry fees, paying out prizes, recruiting judges, and ensuring good atmosphere and customer service during the event.
+
+_See also pretty version of this [Readme on Medium.com](https://medium.com/@ghostmap/outline-for-revamped-ndto-3a2a0d35feab)._
+
+_Documentation for [previous version](https://github.com/Jabernathy88/capstone-jeremy-dev)._
 
 ## ERD & data attributes
 
