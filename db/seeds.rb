@@ -10,7 +10,7 @@ ActiveRecord::Base.connection.tables.each do |t|
 end
 
 tourn1 = Tournament.find(1)
-tourn2 = Tournament.find(2)
+# tourn2 = Tournament.find(2)
 
 team_black = Player.create(
   tournament: tourn1,
