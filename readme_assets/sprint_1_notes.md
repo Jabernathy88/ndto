@@ -48,11 +48,13 @@ in: registration/new registration/edit
 
 SPRINT 1.2 (end 2:45 Friday)
 
-# add custom logout to routes:
-# ```devise_scope :user do
-#    post 'users/new-registration' => 'users/registrations#create'
-#    post 'users/new-session' => 'users/sessions#create'
-# end``` # later
+add custom logout to routes:
+```
+devise_scope :user do
+  post 'users/new-registration' => 'users/registrations#create'
+  post 'users/new-session' => 'users/sessions#create'
+ end
+``` 
 
 rails g migration AddUserToTournaments user:references
 
